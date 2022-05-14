@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS animation</title>
+    </head>
+    <style>
+        .container{
+            background-color: greenyellow;
+        }
+        .box{
+            background-color: green;
+            width:250px;
+            height:250px;
+            position: relative;
+            /* animation-name: madhav1;*/
+            animation-name: madhav2;
+            animation-duration: 20s;
+            animation-iteration-count: 1;
+           /* animation-fill-mode: alternate; */
+           /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+           /* animation-direction: reverse; */
+
+           /* These properties can be set using this shorthand */
+         /*  animation:animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+         animation: madhav 5s ease-in is 12 backwards;
+        }
+
+        @keyframes madhav2 {
+            0%{
+               top:0px;
+               left:0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top:0px;
+                left:250px;
+            }
+        }
+
+        @keyfrmes madhav1{
+            from{
+                  width:200px;
+            }
+            to{
+                 width:400px;
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="box">
+
+                
+        </div>
+</html>
